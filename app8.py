@@ -13,7 +13,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import os
 
 # In[9]:
 
@@ -49,8 +49,10 @@ st.dataframe(HairEyeSelect)
 
 
 import kaggle
-get_ipython().run_line_magic('env', 'KAGGLE_USERNAME="rickwolbertus"')
-get_ipython().run_line_magic('env', 'KAGGLE_KEY="e5855257a16718159038159ac864b8f7"')
+
+os.environ['KAGGLE_USERNAME'] = "'rickwolbertus"
+os.environ['KAGGLE_KEY'] = "e5855257a16718159038159ac864b8f7"
+
 
 
 # In[2]:
