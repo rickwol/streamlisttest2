@@ -36,7 +36,7 @@ InputHair = st.sidebar.selectbox("Select Hair Colour", ("Brown", "Black", "Blond
 # In[ ]:
 
 
-HairEyeselect = HairEye[HairEye["Hair"] == InputHair]
+HairEyeSelect = HairEye[HairEye["Hair"] == InputHair]
 
 
 # In[ ]:
@@ -51,13 +51,6 @@ st.dataframe(HairEyeSelect)
 import kaggle
 get_ipython().run_line_magic('env', 'KAGGLE_USERNAME="rickwolbertus"')
 get_ipython().run_line_magic('env', 'KAGGLE_KEY="e5855257a16718159038159ac864b8f7"')
-
-
-# In[13]:
-
-
-from importlib.metadata import version
-version('kaggle')
 
 
 # In[2]:
