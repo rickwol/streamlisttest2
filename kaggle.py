@@ -1,5 +1,5 @@
 import pandas as pd
-from kaggle.api.kaggle_api_extended import KaggleApi
+import kaggle
 import streamlit as st
 
 import os
